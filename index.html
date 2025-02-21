@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900"
+      rel="stylesheet"
+    />
+
+    <title>Shamik's Protfolio</title>
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/fullpage.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
+
+    <link rel="stylesheet" href="css/animate.css" />
+
+    <link rel="stylesheet" href="css/templatemo-style.css" />
+
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <style>
+      /* Thumb inner */
+      .owl-stage .item .thumb-inner {
+        letter-spacing: 0px;
+        text-align: justify;
+        line-height: 1.1em;
+      }
+
+      /* Image */
+      .about-section .about-img img {
+        max-width: 70%;
+        margin-top: 85px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+      }
+
+      .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        background: #191919;
+        padding: 40px;
+        border-radius: 10px;
+      }
+
+      .skills-section {
+        background: #232323;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        color: white;
+      }
+
+      .skills-section h3 {
+        font-size: 20px;
+        color: #ffcc00;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+      }
+
+      .skill-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background: #1c1c1c;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 14px;
+      }
+
+      .skill-item img {
+        width: 25px;
+        height: 25px;
+      }
+      /* Skills section */
+      #fullpage .skills-section {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 30px;
+      }
+
+      @media (max-width: 768px) {
+        .skills-container {
+          flex-direction: column;
+        }
+      }
+
+      .navigation-menu li a {
+        padding: 10px 20px;
+        transition: background-color 0.3s, color 0.3s, border-bottom 0.3s;
+      }
+      .resume-button {
+        display: inline-block;
+        padding: 10px 20px;
+        /* background-color: #2596be; Updated background color */
+        color: #ffffff; /* White text color */
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+        transition: background-color 0.3s, color 0.3s;
+        border: 2px solid #010101;
+      }
+
+      .resume-button:hover {
+        background-color: #fafafa;
+        color: #010101;
+      }
+      /* Font Icon */
+      #nav li i {
+        padding-right: 0px;
+        padding-left: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="video">
+      <div class="preloader">
+        <div class="preloader-bounce">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <header id="header">
+        <div class="container-fluid">
+          <div class="navbar">
+            <a href="#slide01" id="logo" title="Shamik"> Shamik </a>
+            <div class="navigation-row">
+              <nav id="navigation">
+                <button type="button" class="navbar-toggle">
+                  <i class="fa fa-bars"></i>
+                </button>
+                <div class="nav-box navbar-collapse">
+                  <ul class="navigation-menu nav navbar-nav navbars" id="nav">
+                    <li data-menuanchor="slide01" class="active">
+                      <a href="#slide01">Home</a>
+                    </li>
+                    <li data-menuanchor="slide02">
+                      <a href="#slide02">About Me</a>
+                    </li>
+                    <li data-menuanchor="slide03">
+                      <a href="#slide03">Education</a>
+                    </li>
+                    <li data-menuanchor="slide04">
+                      <a href="#slide04">My Skills</a>
+                    </li>
+                    <li data-menuanchor="slide05">
+                      <a href="#slide05">My Projects and Research Works</a>
+                    </li>
+                    <li data-menuanchor="slide06">
+                      <a href="#slide06">Contact Me</a>
+                    </li>
+                    <li>
+                      <a
+                        href="Shamik_resume.pdf"
+                        class="resume-button"
+                        id="resume-link"
+                        target="_blank"
+                        >Download Resume<i class="fa fa-download"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- <video autoplay muted loop id="myVideo">
+          <source src="images/video-bg.mp4" type="video/mp4">
+        </video> -->
+
+      <div id="fullpage" class="fullpage-default">
+        <div class="section animated-row" data-section="slide01">
+          <div class="section-inner">
+            <div class="welcome-box">
+              <span class="welcome-first animate" data-animate="fadeInUp"
+                >Hello, I am</span
+              >
+              <h1 class="welcome-title animate" data-animate="fadeInUp">
+                Shamik Bardhan
+              </h1>
+              <!-- <p class="animate" data-animate="fadeInUp">
+                Student | Developer | Problem Solver | Tech Enthusiast
+              </p> -->
+              <h3 class="animate" data-animate="fadeInUp">
+                <span id="animated-text"></span>
+              </h3>
+              <div
+                class="scroll-down next-section animate data-animate-fadeInUp"
+              >
+                <img src="images/mouse-scroll.png" alt="" /><span
+                  >Scroll Down</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section animated-row" data-section="slide02">
+          <div class="section-inner">
+            <div class="about-section">
+              <div class="row justify-content-center">
+                <div class="col-lg-8 wide-col-laptop">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="about-contentbox">
+                        <div class="animate" data-animate="fadeInUp">
+                          <span>About Me</span>
+                          <p>
+                            I am a passionate tech enthusiast with a keen
+                            interest in artificial intelligence, machine
+                            learning, and innovative problem-solving. Currently
+                            pursuing a B.Tech in Computer Science and
+                            Engineering at Narula Institute of Technology, I am
+                            always eager to explore emerging technologies and
+                            apply them to real-world challenges.
+                          </p>
+                          <p>
+                            Beyond academics, I actively engage in research and
+                            have been recognized for my contributions, including
+                            winning the Best Paper Award at IEEE DABCON for my
+                            work in bioinformatics. I also enjoy working on
+                            projects that push the boundaries of technology,
+                            from developing interactive web applications to
+                            exploring new computational methodologies.
+                          </p>
+                          <p>
+                            With a strong foundation in programming and a
+                            mindset for continuous learning, I aim to contribute
+                            to impactful technological advancements while
+                            refining my expertise in AI, software development,
+                            and research.
+                          </p>
+                        </div>
+
+                        <!-- <div class="facts-list owl-carousel">
+                                                <div class="item animate" data-animate="fadeInUp">
+                                                    <div class="counter-box">
+                                                        <i class="fa fa-trophy counter-icon" aria-hidden="true"></i><span class="count-number">32</span> Awards Won
+                                                    </div>
+                                                </div>
+                                                <div class="item animate" data-animate="fadeInUp">
+                                                    <div class="counter-box">
+                                                        <i class="fa fa-graduation-cap counter-icon" aria-hidden="true"></i><span class="count-number">4</span> Degrees
+                                                    </div>
+                                                </div>
+                                                <div class="item animate" data-animate="fadeInUp">
+                                                    <div class="counter-box">
+                                                        <i class="fa fa-desktop counter-icon" aria-hidden="true"></i><span class="count-number">12</span> Working Years
+                                                    </div>
+                                                </div>
+                                                <div class="item animate" data-animate="fadeInUp">
+                                                    <div class="counter-box">
+                                                        <i class="fa fa-support counter-icon" aria-hidden="true"></i><span class="count-number">6</span> Team Members
+                                                    </div>
+                                                </div>
+                                                <div class="item animate" data-animate="fadeInUp">
+                                                    <div class="counter-box">
+                                                        <i class="fa fa-certificate counter-icon" aria-hidden="true"></i><span class="count-number">10</span> Certificates
+                                                    </div>
+                                                </div>
+                                            </div> -->
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <figure class="about-img animate" data-animate="fadeInUp">
+                        <img
+                          src="images/Profile-pic.jpg"
+                          class="rounded"
+                          alt=""
+                        />
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section animated-row" data-section="slide03">
+          <div class="section-inner">
+            <div class="row justify-content-center">
+              <div class="col-md-8 wide-col-laptop">
+                <div class="title-block animate" data-animate="fadeInUp">
+                  <span>Education</span>
+                  <h2>My Academic Journey</h2>
+                </div>
+                <div class="timeline"></div>
+                <div class="timeline-item animate" data-animate="fadeInUp">
+                  <div class="timeline-icon">
+                    <i class="fa fa-graduation-cap"></i>
+                  </div>
+                  <div class="timeline-content">
+                    <h4>
+                      Bachelor of Technology in Computer Science and Engineering
+                    </h4>
+                    <p>Narula Institute of Technology, Expected 2026</p>
+                  </div>
+                </div>
+                <div class="timeline-item animate" data-animate="fadeInUp">
+                  <div class="timeline-icon">
+                    <i class="fa fa-graduation-cap"></i>
+                  </div>
+                  <div class="timeline-content">
+                    <h4>12<sup>th</sup> Grade</h4>
+                    <p>The Aryans School, 2022</p>
+                  </div>
+                </div>
+                <div class="timeline-item animate" data-animate="fadeInUp">
+                  <div class="timeline-icon">
+                    <i class="fa fa-graduation-cap"></i>
+                  </div>
+                  <div class="timeline-content">
+                    <h4>10<sup>th</sup> grade</h4>
+                    <p>The Aryans School, 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section animated-row" data-section="slide04">
+          <div class="section-inner">
+            <div class="row justify-content-center">
+              <div class="col-md-10 wide-col-laptop">
+                <div class="title-block animate" data-animate="fadeInUp">
+                  <h1>Skills</h1>
+                  <!-- <h2>What I’m Good At?</h2> -->
+                </div>
+                <div class="skills-container animate" data-animate="fadeInDown">
+                  <!-- Programming Languages -->
+                  <div class="skills-section">
+                    <h3><i class="fa fa-code"></i> Programming Languages</h3>
+                    <div class="skills-list">
+                      <div class="skill-item">
+                        <img src="icons/python.svg" alt="Python" /> Python
+                      </div>
+                      <div class="skill-item">
+                        <img src="icons/c.svg" alt="C" /> C
+                      </div>
+                      <div class="skill-item">
+                        <img src="icons/cpp.svg" alt="C++" /> C++
+                      </div>
+                      <div class="skill-item">
+                        <img src="icons/java.svg" alt="Java" /> Java
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Web Development -->
+                  <div class="skills-section">
+                    <h3><i class="fa fa-globe"></i> Web Development</h3>
+                    <div class="skills-list">
+                      <div class="skill-item">
+                        <img src="icons/django.svg" alt="Django" /> Django
+                      </div>
+                      <div class="skill-item">
+                        <img src="icons/flask.svg" alt="Flask" /> Flask
+                      </div>
+                      <div class="skill-item">
+                        <img src="icons/firebase.svg" alt="Firebase" /> Firebase
+                      </div>
+                      <div class="skill-item">
+                        <img src="icons/html.svg" alt="HTML" /> HTML
+                      </div>
+                      <div class="skill-item">
+                        <img src="icons/css.svg" alt="CSS" /> CSS
+                      </div>
+                      <div class="skill-item">
+                        <img src="icons/js.svg" alt="JavaScript" /> JavaScript
+                      </div>
+                      <div class="skill-item">
+                        <img src="icons/bootstrap.svg" alt="Bootstrap" />
+                        Bootstrap
+                      </div>
+                      <div class="skill-item">
+                        <img src="icons/php.png" alt="php" />
+                        PHP
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Machine Learning & AI -->
+                  <div class="skills-section">
+                    <h3><i class="fa fa-cogs"></i> Machine Learning & AI</h3>
+                    <p>Currently learning ML and AI fundamentals.</p>
+                  </div>
+                  <!-- Computer Vision -->
+                  <div class="skills-section">
+                    <h3><i class="fa fa-eye"></i> Computer Vision</h3>
+                    <div class="skills-list">
+                      <div class="skill-item">
+                        <img src="icons/opencv.svg" alt="OpenCV" /> OpenCV
+                      </div>
+                      <div class="skill-item">
+                        <img src="icons/MediaPipe.png" alt="Mediapipe" />
+                        Mediapipe (Hand Gesture Recognition)
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Database Management -->
+                  <div class="skills-section">
+                    <h3><i class="fa fa-database"></i> Database Management</h3>
+                    <div class="skills-list">
+                      <div class="skill-item">
+                        <img src="icons/firebase.svg" alt="Firebase" /> Firebase
+                        Storage
+                      </div>
+                      <div class="skill-item">
+                        <img src="icons/django.svg" alt="Django ORM" /> Django
+                        ORM
+                      </div>
+                      <div class="skill-item">
+                        <img src="icons/mysql.svg" alt="MySQL" /> MySQL
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Version Control & Deployment -->
+                  <div class="skills-section">
+                    <h3>
+                      <i class="fa fa-cloud-upload"></i> Version Control &
+                      Deployment
+                    </h3>
+                    <div class="skills-list">
+                      <div class="skill-item">
+                        <img src="icons/github.svg" alt="GitHub" /> GitHub
+                      </div>
+                      <div class="skill-item">
+                        <img src="icons/render.png" alt="Render" /> Render
+                      </div>
+                      <div class="skill-item">
+                        <img
+                          src="icons/pythonanywhere.png"
+                          alt="PythonAnywhere"
+                        />
+                        PythonAnywhere
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section animated-row" data-section="slide05">
+          <div class="section-inner">
+            <div class="row justify-content-center">
+              <div class="col-md-8 wide-col-laptop">
+                <div class="title-block animate" data-animate="fadeInUp">
+                  <span>My Projects and Research Works</span>
+                  <h2>what i’ve done?</h2>
+                </div>
+                <div class="gallery-section">
+                  <div class="gallery-list owl-carousel">
+                    <div class="item animate" data-animate="fadeInUp">
+                      <div class="portfolio-item">
+                        <div class="thumb">
+                          <img src="images/Research.webp" alt="" />
+                        </div>
+                        <div
+                          class="thumb-inner animate"
+                          data-animate="fadeInUp"
+                        >
+                          <h4>
+                            Enhancing Phylogenetic Analysis: A New Genome
+                            Sequence Comparison Approach Using Bray-Curtis
+                            Dissimilarity Metric
+                          </h4>
+                          <ul style="color: black">
+                            <li>Published in IEEE.</li>
+                            <li>
+                              Focused on innovative methods for genome sequence
+                              comparison using advanced metrics
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item animate" data-animate="fadeInUp">
+                      <div class="portfolio-item">
+                        <div class="thumb">
+                          <img src="images/OIP.jpeg" height="350" alt="" />
+                        </div>
+                        <div
+                          class="thumb-inner animate"
+                          data-animate="fadeInUp"
+                        >
+                          <h4>AR Writing Using Hand Gestures</h4>
+                          <ul style="color: black">
+                            <li>
+                              Developed an Augmented Reality (AR) writing system
+                              utilizing HTML, CSS, and JavaScript, and also
+                              implemented the same using Flask.
+                            </li>
+
+                            <li>
+                              Project hosted on GitHub and deployed:
+                              <a
+                                href="https://shamik004.github.io/AR_WEb/"
+                                style="color: blue"
+                                >AR Gesture Writing</a
+                              >.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item animate" data-animate="fadeInUp">
+                      <div class="portfolio-item">
+                        <div class="thumb">
+                          <img src="images/disaster.jpg" height="350" alt="" />
+                        </div>
+                        <div
+                          class="thumb-inner animate"
+                          data-animate="fadeInUp"
+                        >
+                          <h4>On-Ground Disaster Management Car (ODMC)</h4>
+                          <ul style="color: black">
+                            <li>
+                              Developed an Arduino-based hardware model for
+                              disaster management.
+                            </li>
+                            <li>
+                              Designed and coded the entire system for real-time
+                              monitoring and assistance in disaster scenarios.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item animate" data-animate="fadeInUp">
+                      <div class="portfolio-item">
+                        <div class="thumb">
+                          <img src="images/OIP (1).jpeg" height="350" alt="" />
+                        </div>
+                        <div
+                          class="thumb-inner animate"
+                          data-animate="fadeInUp"
+                        >
+                          <h4>Flood Relief Providing Device</h4>
+                          <ul style="color: black">
+                            <li>
+                              Collaborated on a patented project focused on
+                              flood relief mechanisms.
+                            </li>
+                            <li>
+                              Developed the device's framework for immediate
+                              flood assistance.
+                            </li>
+                            <li>Patent Application Number : 202431017509</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section animated-row" data-section="slide06">
+          <div class="section-inner">
+            <div class="row justify-content-center">
+              <div class="col-md-7 wide-col-laptop">
+                <div class="title-block animate" data-animate="fadeInUp">
+                  <span>Contact</span>
+                  <h2>Get In Touch!</h2>
+                </div>
+                <div class="contact-section">
+                  <div class="row">
+                    <div class="col-md-6 animate" data-animate="fadeInUp">
+                      <div class="contact-box">
+                        <div class="contact-row">
+                          <i class="fa fa-map-marker"></i
+                          ><a href="https://maps.app.goo.gl/gHLyCszxLYp8f7ma8">
+                            11, Old Nimta Road, Belghoria, Kolkata - 700056</a
+                          >
+                        </div>
+                        <div class="contact-row">
+                          <i class="fa fa-phone"></i
+                          ><a href="tel:+918443089864"> +91 8443089864</a>
+                        </div>
+                        <div class="contact-row">
+                          <i class="fa fa-envelope"></i
+                          ><a href="mailto:shamik.bardhan2004@gmail.com"
+                            >shamik.bardhan2004@gmail.com</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 animate" data-animate="fadeInUp">
+                      <form
+                        id="ajax-contact"
+                        method="post"
+                        action="https://formspree.io/f/mzzdoqqy"
+                      >
+                        <div class="input-field">
+                          <input
+                            type="text"
+                            class="form-control"
+                            name="name"
+                            id="name"
+                            required
+                            placeholder="Name"
+                          />
+                        </div>
+                        <div class="input-field">
+                          <input
+                            type="email"
+                            class="form-control"
+                            name="email"
+                            id="email"
+                            required
+                            placeholder="Email"
+                          />
+                        </div>
+                        <div class="input-field">
+                          <textarea
+                            class="form-control"
+                            name="message"
+                            id="message"
+                            required
+                            placeholder="Message"
+                          ></textarea>
+                        </div>
+                        <button class="btn" type="submit">Submit</button>
+                      </form>
+                      <div id="form-messages" class="mt-3"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="nav-icons">
+        <div class="text-left">
+          <ul class="social-icons">
+            <li>
+              <a href="https://github.com/Shamik004" title="Github"
+                ><i class="fa fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/shamik-bardhan-43a81a214/"
+                title="Linkedin"
+                ><i class="fa fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="mailto:shamik.bardhan2004@gmail.com" title="Mail"
+                ><i class="fa fa-inbox"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/agn_shamik?igsh=MXd1cWowZmFwcXBiNQ=="
+                title="Instagram"
+                ><i class="fa fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://x.com/BardhanShamik?t=mg4tCJ9XPKZ_Wk8is1p0ww&s=09"
+                title="Twitter"
+                ><i class="fa fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/share/18fRQK7H3A/"
+                title="Facebook"
+                ><i class="fa fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://wa.me/918443089864?text=Hello%20Shamik!"
+                title="Whatsapp"
+                ><i class="fa fa-whatsapp"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/fullpage.min.js"></script>
+
+    <script src="js/scrolloverflow.js"></script>
+
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script src="js/jquery.inview.min.js"></script>
+
+    <script src="js/form.js"></script>
+
+    <script src="js/custom.js"></script>
+  </body>
+</html>
